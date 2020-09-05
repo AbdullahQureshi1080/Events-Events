@@ -1,0 +1,37 @@
+{
+  "name": "eventsandevents",
+  "version": "1.0.0",
+  "description": "\"Website for Events&Events\"",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdullahQureshi1080/Events-Events.git"
+  },
+  "author": "Abdullah Qureshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdullahQureshi1080/Events-Events/issues"
+  },
+  "homepage": "https://github.com/AbdullahQureshi1080/Events-Events#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "node": "^14.8.0",
+    "node-sass": "^4.14.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2"
+  }
+}
