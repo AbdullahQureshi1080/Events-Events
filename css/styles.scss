@@ -173,6 +173,20 @@ $paddingPage: 5%;
   }
 }
 
+// footer
+.page-footer{
+  background-color:#3a3737 ;
+  font-size: 1.2rem;
+  .footer-copyright{
+    color:#ebebeb;
+    a {
+      text-decoration: none;
+      color:#ebebeb !important;
+     
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   // section{
   //   height: 500px;
